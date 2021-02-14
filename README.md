@@ -1,14 +1,20 @@
-## Repo: docker-demo
-Docker - an introductory, hands-on demo
+# Introduction
 
-Ever written code and given it to someone and then they say they can't run it because:
+Welcome to Docker: an Introductory, Hands-on Tutorial
+
+So, let's start with a question that will be familiar to many technical developers.
+
+Ever written flawless code and given it to someone? ...And then they say they "can't run it without errors" because:
 - their OS setup or environment variables are different than yours
 - their version of Python is different
 - they're using different Python libraries than you and with different versions of each
   etc. etc.
 
-Wouldnt it be nice if you could give them an exact copy of your computer/environment so that they can run 
+...Wouldnt it be nice if you could give them an exact copy of your computer/environment so that they can run 
 it and see what you see?  THAT is where Docker's container technology comes in.
+
+
+## ...Enter, Docker
 
 With Docker, you can create an image of the platform and everything running on it, including your python
 code, your database version, and anything else that's needed.  Send the image to them (a relatively small 
@@ -19,9 +25,10 @@ of one another -- all because they started the process by both using the same Do
 
 This repo demos how to get up and running with Docker.
 
-## Getting Started
 
-# Preliminaries - Linux setup and downloads.
+# Getting Started
+
+## Preliminaries - Linux setup and downloads.
 
 1. Open a Linux session.
 
@@ -52,7 +59,7 @@ This repo demos how to get up and running with Docker.
     At this point, you now have Unix machine with Docker installed on it.
 
 
-## Now, the fun stuff...! 
+# Now, the fun stuff...! 
 
 3. Download Docker images from Docker Hub.
 
@@ -106,9 +113,9 @@ This repo demos how to get up and running with Docker.
         
 
         
-## Further Exercises      
+# Further Exercises      
 
-# Lab 1: Running Python in a Docker Container  ("Hello World")
+## Lab 1: Running Python in a Docker Container  ("Hello World")
 
     We'll run a container, enter it, and happily code and run programs from INSIDE the container, oblivious to the outside world.
 
@@ -139,7 +146,7 @@ This repo demos how to get up and running with Docker.
     to a new image is imperative if you want to share
     
 
-# Lab 2: Running Python in a Docker Container  ("Hello World", part II)
+## Lab 2: Running Python in a Docker Container  ("Hello World", part II)
   
     We'll now run a container, but interact with code running inside the container while we remain OUTSIDE the container.
 
@@ -153,7 +160,7 @@ This repo demos how to get up and running with Docker.
     same container or even between containers.
     
 
-# Lab 3: Further Reading and Building Docker images from scratch (Intro to Dockerfiles)
+## Lab 3: Further Reading and Building Docker images from scratch (Intro to Dockerfiles)
 
     The little detail above about 'pip install flask' (since our Python script required flask library) raises
     the need to be able to script your container so that not only Python core library is loaded but also any
